@@ -1,6 +1,19 @@
+import AppContainer from "./components/AppContainer";
+import AppRow from "./components/AppRow";
+import TodoInput from "./components/TodoInput";
+
 function App() {
   return (
-    <p>Test</p>
+    <main>
+      {/*zet het in de midden */}
+      <AppContainer>
+        {/*geeft padding tot de randen */}
+      <AppRow> 
+        {/*Content */}
+        <TodoInput />
+      </AppRow>
+      </AppContainer>
+    </main>
   );
 }
 
