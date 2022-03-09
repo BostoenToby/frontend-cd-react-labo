@@ -5,7 +5,7 @@ import TodoInput from "./components/TodoInput";
 import TodoItem from "./components/TodoItem";
 
 function App() {
-  const dummyItems = new Array(6)
+  // const dummyItems = new Array(6)
 
   return (
     <main>
