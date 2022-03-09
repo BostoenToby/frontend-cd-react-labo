@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AppContainer from "./components/AppContainer";
+import AppRow from "./components/AppRow";
+import TodoAppHeader from "./components/TodoAppHeader";
+import TodoInput from "./components/TodoInput";
+import TodoItem from "./components/TodoItem";
 
 function App() {
+  const dummyItems = new Array(6)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      {/*zet het in de midden */}
+      <AppContainer>
+        {/*geeft padding tot de randen */}
+      <AppRow> 
+        {/*Content */}
+        <TodoAppHeader />
+
+        <TodoInput />
+
+        {/* {dummyItems.map(() => {<TodoItem />})} */}
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+        
+      </AppRow>
+      </AppContainer>
+    </main>
   );
 }
 

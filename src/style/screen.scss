@@ -1,0 +1,19 @@
+//npm i -D sass
+//@forward --> maakt sass file beschikbaar verderop in de imports
+//@use --> gebruikt file in huidige scope (specifieke items --> use)
+// ELEMENTS
+@use './elements/page.scss';
+@use './elements/root.scss';
+
+// GENERIC
+@use './generic/reset';
+
+// OBJECTS
+
+
+// SETTINGS
+@forward './settings/media-sizes.scss';
+@forward './settings/fonts.scss';
+
+// TOOLS
+@forward './generic/reset.scss';
