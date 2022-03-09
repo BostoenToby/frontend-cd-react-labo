@@ -1,8 +1,10 @@
+import '../style/components/todo-app-header.scss'
+
 const TodoAppHeader = () => {
     return (
-        <header>
-            <p>Hello there,</p>
-            <p>There are x todos.</p>
+        <header className="c-todo-app-header">
+            <h1 className="c-todo-app-header__title">Hello {'Toby'}</h1>
+            <h2 className="c-todo-app-header__subtitle">There are {3} todos.</h2>
         </header>
     )
 }
